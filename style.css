@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+}
+
+p {
+    font-size: 18px;
+    color: rgb(157, 157, 157);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 643px;
+    margin-top: 95px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: hsl(216, 50%, 16%);
+}
+
+.image-section {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.image-section img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.container .image-section div {
+    position: absolute;
+    top: 0;
+    background-color: hsl(178, 100%, 50%, 50%);
+    width: 100%;
+    height: calc(100% - 4px);
+    z-index: 999;
+    opacity: 0;
+    border-radius: 10px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.container .image-section div:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.container .image-section div img {
+    width: 20%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.equlibrium {
+    margin-top: 20px;
+    color: hsl(0, 0%, 100%);
+    transition: 0.2s ease-out;
+}
+
+.equlibrium:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.description {
+    margin-top: 20px;
+}
+
+.price-section {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.ethereum {
+    margin-bottom: -3px;
+    padding-right: 6px;
+}
+
+.price {
+    color: hsl(178, 100%, 50%);
+    font-weight: 700;
+}
+
+.clock {
+    margin-bottom: -3px;
+    padding-right: 6px;
+}
+
+.days-left {
+    color: rgb(157, 157, 157);
+}
+
+.underline {
+    margin-top: 20px;
+    height: 0.5px;
+    color: rgb(93, 93, 93);
+    opacity: 0.2;
+}
+
+.profile-section {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.profile-section img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 2px solid white;
+}
+
+.avatar-name {
+    margin-left: 20px;
+}
+
+.name {
+    color: hsl(0, 0%, 100%);
+}
+
+.name:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+@media (min-width: 375px) {
+    .container {
+        width: 322px;
+        height: 550px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+}
